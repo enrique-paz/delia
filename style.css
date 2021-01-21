@@ -1,0 +1,285 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* GENERAL STYLES */
+
+body {font-family: 'Lato', sans-serif;color:#0c5fa4;font-weight:300;}
+
+h1 {font-size:31px;}
+
+h3 {font-size:21px;ftext-transform:uppercase}
+
+.green {color:#19ab6a;}
+
+input {width:300px;padding:15px;border-radius:5px;margin-top:25px;text-align:center;font-size:14px;border:1px solid #ccc}
+
+a {color:#fff;text-decoration:none;}
+
+a:hover {text-decoration:underline;}
+
+/* MAIN STYLES */
+
+.container {width:1126px;margin:0 auto;position:relative;}
+
+.nav {height:100px;}
+
+.mainnav {padding:40px 0 40px;float:right;font-weight:normal}
+
+.mainnav ul {margin:0;padding:0;}
+
+.mainnav li {display:inline-block;padding:0 18px;}
+
+.mainnav li a {text-decoration:none;color:#0c5fa4;font-size:17px;display:block}
+
+.mainnav li a:hover {border-bottom:2px solid #19ab6a;padding-bottom:5px;}
+
+.subnav {background-color:#0c5fa4;height:74px;}
+
+.subnav ul {margin:0;padding:0;}
+
+.subnav li {display:inline-block;padding:25px 25px;}
+
+.subnav li a {text-decoration:none;color:#fff;font-size:17px;font-weight:700;padding-bottom:5px;text-align:center}
+
+.subnav li a:hover {border-bottom:2px solid #fff;padding-bottom:5px;}
+
+.logo {width:250px;margin-top:28px;margin-left:10px;float:left;}
+
+.main {height:896px;background-image:url(images/store-bg2.jpg);background-repeat:repeat;background-size:cover;position:relative;}
+
+.mainfeature {height:657px;background-image:url(images/features-bkg.jpg);background-repeat:no-repeat;background-size:cover;position:relative;}
+
+.fixednav {width:100%;border-top:8px solid #19ab6a;background-color:rgba(255,255,255,.9);position:fixed;z-index:100;box-shadow:0 0 5px rgba(32,32,38,.5);top:0;float:left}
+
+.pdfpanel {height:468px;text-align:center;color:#fff;position:relative;background-color:#19ab6a;}
+
+.dots {background: url(images/dots-bkg.png) no-repeat;background-attachment:fixed;height:468px}
+
+.pdfpanelhead {font-size:42px;font-weight:300;margin-bottom:20px;margin-top:20px}
+
+.patent {height:578px;text-align:center;}
+
+.patentbox {width:215px;float:left;padding:10px;text-align:left;margin-right:35px;}
+
+.patentbox p {font-size:17px;line-height:24px}
+
+.patentboxwrap {position:relative;top:210px;}
+
+.features {height:912px;background-image:url(images/retail-gray.jpg);background-repeat:no-repeat;background-size:cover;text-align:center;font-size:21px;padding-top:75px;}
+
+.featureshead {font-size:46px;margin-bottom:25px;}
+
+.features img {margin-top:45px;margin-bottom:25px;}
+
+.stats {height:479px;font-size:27px;font-weight:300;text-align:center;line-height:46px;}
+
+.base {min-height:252px;background-color:#0C5FA4;color:#fff;font-size:14px;line-height:18px;}
+
+.base p {margin:15px 0 25px;}
+
+.basepad {padding-top:50px;}
+
+.baselft {width:800px;float:left;}
+
+.baserght {width:200px;float:right;height:100px;margin-top:70px}
+
+.baserght a {display:inline-block;width:48px;height:44px;}
+
+.baserght a.facebook {background:url(images/social-icons.png) 0 0 no-repeat;}
+
+.baserght a.facebook:hover {background:url(images/social-icons.png) 1px -48px no-repeat;}
+
+.baserght a.linkedin {background:url(images/social-icons.png) -48px 0 no-repeat;}
+
+.baserght a.linkedin:hover {background:url(images/social-icons.png) -47px -48px no-repeat;}
+
+.baserght a.twitter {background:url(images/social-icons.png) -98px 0 no-repeat;}
+
+.baserght a.twitter:hover {background:url(images/social-icons.png) -97px -48px no-repeat;}
+
+.baserght a.youtube {background:url(images/social-icons.png) -148px 0 no-repeat;}
+
+.baserght a.youtube:hover {background:url(images/social-icons.png) -147px -48px no-repeat;}
+
+.banner {height:374px;background-color:rgba(255,255,255,.9);width:100%;position:relative;top:292px;}
+
+.bannermsg {position:relative;z-index:2;top:-160px;}
+
+.bannerrghtcol {position:relative;top:120px;left:50px;width:600px;float:left}
+
+.featurecol {position:absolute;left:490px;top:300px;width:650px;}
+
+.bannerrghtcol p {font-size:25px;font-weight:300;line-height:40px;}
+
+.bannerhead {font-size:50px;margin-bottom:25px;}
+
+button {background-color:#19ab6a;padding:14px 35px;border-radius:25px;border:none;font-size:17px;color:#fff;margin-top:30px;}
+
+button:hover {background-color:#15915a;-webkit-transition: background-color 2s; /* For Safari 3.1 to 6.0 */
+    transition: background-color .5s;}
+
+.blubtn {background-color:rgb(12,95,164);padding:8px 35px;border-radius:25px;border:none;font-size:17px;color:#fff;display:block;margin:30px auto 0}
+
+.blubtn:hover {background-color:rgb(10,76,132);-webkit-transition: background-color 2s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 2s;cursor:pointer}
+
+.videobtn {background-image:url(images/videobtn.png);background-repeat:no-repeat;background-color:transparent;color:#19ab6a;margin-left:15px;padding-left:50px}
+
+.videobtn:hover {background-image:url(images/videobtn-hvr.png);background-repeat:no-repeat;background-color:transparent;color:rgb(0,68,152);cursor:pointer;}
+
+.pad {padding:100px 0;}
+
+.featurebox {width:295px;height:301px;border-top:8px solid #19ab6a;background-color:rgba(0,68,152, .9);float:left;margin-bottom:30px;position:relative;overflow:hidden;}
+
+.featurebox .rollover {display:none;position:absolute;left:0;top:0;width:100%;height:100%}
+
+div.featurebox:hover > .rollover {display:block;color:#fff;background-color:rgba(25,171,106,.85);padding-top:100px;animation:reflow .15s;-webkit-animation:reflow .15s;cursor:pointer}
+
+.featurebox p {font-size:30px;color:#fff;}
+
+.lm {border:2px solid #fff;padding:15px;border-radius:100px;width:200px;background-color:transparent;cursor:pointer}
+
+.lm:hover {background-color:rgba(255,255,255,.2);}
+
+div.featurebox:hover > .rollover:hover {animation:learn .15s;-webkit-animation:learn .15s;} 
+
+@keyframes reflow {
+	
+	to {width:auto;}
+	
+}
+
+
+
+@keyframes learn {
+	
+	from {padding-top:140px;opacity:0;background-color:rgba(25,171,106,0)}
+	to {padding-top:100px;opacity:.85;background-color:rgba(25,171,106,.85)}
+	
+}
+
+@-webkit-keyframes reflow {
+	
+	to {width:auto;}
+	
+}
+
+
+
+@-webkit-keyframes learn {
+	
+	from {padding-top:140px;opacity:.15}
+	to {padding-top:100px;opacity:1}
+	
+}
+
+
+.spacer {margin:0 30px;}
+
+.promobanner {width:36.6667%;max-height:45px;background:url(images/promobkg.png) no-repeat;background-size:cover;position:relative;top:108px;left:0}
+
+.featuresect {height:588px;}
+
+.ltblue {background-color:#e8fafa;height:678px;}
+
+.sectlft {width:550px;float:left;margin-top:149px;}
+
+.sectlft h1, .sectrght h1 {font-size:46px;margin-bottom:15px;}
+
+.sectlft p, .sectrght p {font-size:17px;line-height:28px;}
+
+.sectrght {width:576px;float:left;margin-top:149px;}
+
+.nomargin {margin-top:125px;}
+
+.challenge {height:636px;background-image:url(images/challenge-bkg.jpg);background-repeat:no-repeat;background-size:cover;color:#fff;}
+
+.challenge h1 {font-size:46px;margin-bottom:75px;}
+
+.challenge p {width:690px;font-size:20px;margin:15px 0;line-height:30px;}
+
+.challenge a {text-decoration:none;font-weight:700;color:#19ab6a;}
+
+.challenge a:hover {text-decoration:underline;}
+
+.challenge form {display:inline;margin-top:0;}
+
+.challenge button {padding:12px 25px;margin-left:25px;}
+
+.contact {height:292px;text-align:center;background:url(images/contact-bkg.jpg) no-repeat;background-size:cover;}
+
+.contacthead {position:relative;top:200px;font-size:46px;}
+
+.featuresect form input {margin:10px;}
+
+.buttonwrap {margin:0 auto;width:300px;text-align:center}
+
+.promobanner p {color:#fff;font-weight:700;padding:10px;text-align:right;margin-right:50px}
+
+.asterisk {margin-top:20px;font-size:14px !important;line-height:18px !important;}
+
+a.scrollspace {height:90px;display:block}
+
+.news {border-bottom:1px solid #ccc;padding:35px 0 50px;}
+
+.news p {line-height:24px;margin-top:30px;}
+
+.news h1 {line-height:37px;}
+
+.news button {padding:8px 23px;font-size:16px;}
+
+.newsmain {height:179px;}
+
+@media only screen and (max-width:1300px) {
+	
+	.promobanner {width:384px;background-position:-90px 0}
+}

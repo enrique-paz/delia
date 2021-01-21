@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style type="text/css">
+
+/* MAIN NAV */
+
+ul {margin:0;padding:0;}
+li {display:inline-block;}
+li a {padding:10px 15px;display:block;}
+
+ul li.drop:hover a {background-color:red;color:#fff;display:block;padding:10px 15px} /* ADD TAB HOVER */
+/* MAIN NAV */
+
+ul.second {display:none;} /* HIDE DROP DOWN */
+ul.second li {display:block;} /* KEEP LIST ITEMS VERTICAL */
+
+/* DROP DOWN */
+
+ul > li.drop:hover > ul.second {display:block;position:absolute;margin:0;width:100%;left:0} /* POSITION DROP DOWN */
+
+ul > li.drop:hover > ul.second li {padding:0;}
+
+ul > li.drop > ul.second a {display:block;padding:5px 15px;background-color:red;color:#fff;}
+
+ul > li.drop > ul.second a:hover {display:block;padding:5px 15px;background-color:#aaa;color:red;}
+
+/* DROP DOWN */
+
+</style>
+</head>
+
+<body>
+<div style="width:600px;margin:0 auto;position:relative">
+<ul>
+<li class="drop"><a href="#">buttona</a></li>
+<li class="drop">
+
+<a href="#" >buttonB</a>
+
+<!-- DROP DOWN NAV -->
+<ul class="second">
+  <li><a href="#">SecondA</a></li>
+<li><a href="#">SecondB</a></li>
+</ul>
+<!-- DROP DOWN NAV -->
+
+</li>
+<li class="drop"><a href="#">buttonC</a>
+
+<!-- DROP DOWN NAV -->
+<ul class="second">
+  <li><a href="#">ThirdA</a></li>
+<li><a href="#">ThirdB</a></li>
+</ul>
+<!-- DROP DOWN NAV -->
+
+</li>
+</ul>
+
+</div>
+</body>
+</html>
