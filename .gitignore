@@ -6,3 +6,4 @@ logs/
 *.zip
 .*log
 *.sql
+assets/
