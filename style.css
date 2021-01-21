@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -15,8 +15,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -27,7 +27,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -67,6 +67,7 @@ a {color:#fff;text-decoration:none;}
 a:hover {text-decoration:underline;}
 
 /* MAIN STYLES */
+html {scroll-behavior: smooth;}
 
 .container {width:1126px;margin:0 auto;position:relative;}
 
@@ -190,36 +191,36 @@ div.featurebox:hover > .rollover {display:block;color:#fff;background-color:rgba
 
 .lm:hover {background-color:rgba(255,255,255,.2);}
 
-div.featurebox:hover > .rollover:hover {animation:learn .15s;-webkit-animation:learn .15s;} 
+div.featurebox:hover > .rollover:hover {animation:learn .15s;-webkit-animation:learn .15s;}
 
 @keyframes reflow {
-	
+
 	to {width:auto;}
-	
+
 }
 
 
 
 @keyframes learn {
-	
+
 	from {padding-top:140px;opacity:0;background-color:rgba(25,171,106,0)}
 	to {padding-top:100px;opacity:.85;background-color:rgba(25,171,106,.85)}
-	
+
 }
 
 @-webkit-keyframes reflow {
-	
+
 	to {width:auto;}
-	
+
 }
 
 
 
 @-webkit-keyframes learn {
-	
+
 	from {padding-top:140px;opacity:.15}
 	to {padding-top:100px;opacity:1}
-	
+
 }
 
 
@@ -280,6 +281,6 @@ a.scrollspace {height:90px;display:block}
 .newsmain {height:179px;}
 
 @media only screen and (max-width:1300px) {
-	
+
 	.promobanner {width:384px;background-position:-90px 0}
 }
